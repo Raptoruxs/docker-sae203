@@ -9,7 +9,7 @@
 --------------------------------------------------------------------------------------
 ### TP5 - Comment créer un site Web sur GitHub pages
 
-1# Créer un site Web pour un référentiel existant
+#### 1 - Créer un site Web pour un référentiel existant
 
 * Aller sur votre dépôt github du **tp3**. Ce référentiel est à retrouver sur le site 
 
