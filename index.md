@@ -25,15 +25,37 @@ Une image contient des containers. Ainsi, l'image que nous créerons pourra comp
   
   * L'application vous demandera alors de redémarrer l'ordinateur.
 
-### Installation d'un truc
+### Création du DockerFile
 
-* On a installé Filezilla avec la commande suivante :
+* On a crée un fichier DockerFile, dans lequel nous insérons ce informtions ci-dessous :
 
 ```bash
-apt-get install Filezilla
+FROM debian:latest
 ```
 
-# Point sur le site
+Cette ligne ci-dessus permet tout d'abord de définir à partir d'où l'image prend racine.
+
+```bash
+# Install services, packages and do cleanup
+RUN apt-get update && \
+    apt-get -y install && \
+    apt-get install filezilla
+```
+
+* Ces lignes ci-dessus permettent dans un premier temps, lors de l'execution de l'image, de mettre à jour le système d'exploitation de l'image, pour que tout soit à jour avant d'installer de nouvelles applications. La dernière ligne permet d'installer Filezilla, une logiciel de  partage de fichiers.
+
+```bash
+# EXPOSE APACHE
+EXPOSE 80
+```
+
+* Cette dernière ligne de notre Dockerfile permet de définir le port d'écoute, ici sur 80.
+
+# Point sur l'application
+
+Filezilla est un client FTP (File Transfer Protocol), il permet de se connecter a des serveurs a distance comme des serveurs web afin de mettre en ligne son site. Il permet de partager des fichiers entre différentes machines.
+
+![Logo de Filezilla](https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/FileZilla_logo.svg/1200px-FileZilla_logo.svg.png)
 
 ## Utilisation du site
 
