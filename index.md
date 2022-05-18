@@ -2,7 +2,9 @@
 
 ## Soutenance
 
-On a choisi de réaliser une image docker sur le partage de fichier.
+Lors de la Sae 2.03, qui consiste à l'installation d'un services réseaux, nous nous sommes réunis en brainstorming afin de débattre sur les différentes idées de projet que nous allions le créé ainsi que comment nous allions le réaliser.
+
+
 
 * On a installé Filezilla avec la commande suivante :
 
@@ -16,4 +18,4 @@ apt-get install Filezilla
 
 ---
 
-*Equipe*
+***Equipe n°18 - IUT du Havre - 2021/2022***
