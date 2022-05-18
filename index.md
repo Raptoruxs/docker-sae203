@@ -59,7 +59,9 @@ Filezilla est un client FTP (File Transfer Protocol), il permet de se connecter 
 
 ###### *Icône de Filezilla*
 
-## Utilisation du site
+## Utilisation du programme
+
+FILEZILLA SA SERT A GLISSER DEPOSER DES FICHIERS SUR UN SERVEUR VOILA BISOUS
 
 ---
 
