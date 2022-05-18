@@ -61,8 +61,8 @@ Filezilla est un client FTP (File Transfer Protocol), il permet de se connecter 
 
 ## Utilisation du programme
 
-FILEZILLA SA SERT A GLISSER DEPOSER DES FICHIERS SUR UN SERVEUR VOILA BISOUS
+Filezilla est un logiciel dit FTP, c'est-à-dire qu'il permet de transferer des fichiers d'une machine local à un serveur distant.
 
 ---
 
-***Equipe n°18 - IUT du Havre - 2021/2022***
+   ***Equipe n°18 - IUT du Havre - 2021/2022***
