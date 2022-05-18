@@ -56,6 +56,7 @@ EXPOSE 80
 Filezilla est un client FTP (File Transfer Protocol), il permet de se connecter a des serveurs a distance comme des serveurs web afin de mettre en ligne son site. Il permet de partager des fichiers entre différentes machines.
 
 ![Logo, c'est rigolo](https://iconarchive.com/download/i97762/bokehlicia/pacifica/filezilla.ico)
+ *Icône de Filezilla*
 
 ## Utilisation du site
 
