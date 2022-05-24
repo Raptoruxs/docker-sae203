@@ -1,10 +1,7 @@
 **Equipe :** 18
-
 **Année :** 2021-2022
-
 **IUT Le Havre - Cours GIT**
-
----
+--------------------------------------------------------------------------------------
 # Compte rendu SAE 2.03 - Installation de services réseaux
 
 * Quelque chose d’intéressant qui vient de se passer est que le référentiel a maintenant deux branches, la branche ***gh-pages*** (où nous aurons le contenu Web) et la branche principale ***main*** (où nous continuons à avoir notre code)
@@ -19,5 +16,3 @@
  ```bash
  git checkout gh-pages
  ```
----
----
