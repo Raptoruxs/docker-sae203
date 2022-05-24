@@ -36,16 +36,28 @@ FROM debian:latest
 Cette ligne ci-dessus permet tout d'abord de définir à partir d'où l'image prend racine.
 
 ```bash
-# Install services, packages and do cleanup
+# # Update system, Install software
 RUN apt-get update && \
     apt-get -y install && \
-    apt-get install filezilla
+    apt-get install proftpd
 ```
 
-* Ces lignes ci-dessus permettent dans un premier temps, lors de l'execution de l'image, de mettre à jour le système d'exploitation de l'image, pour que tout soit à jour avant d'installer de nouvelles applications. La dernière ligne permet d'installer Filezilla, une logiciel de  partage de fichiers.
+* Ces lignes ci-dessus permettent dans un premier temps, lors de l'execution de l'image, de mettre à jour le système d'exploitation de l'image, pour que tout soit à jour avant d'installer de nouvelles applications. La dernière ligne permet d'installer proftpd, un outil qui nous permet de crée un serveur ftp sur le debian.
 
 ```bash
-# EXPOSE APACHE
+# Config FTP server
+
+RUN addgroup ftpgroup && \
+    adduser seb --home /ftpshare && \
+    adduser seb ftpgroup && \
+    chmod -R 1777 /ftpshare/ && \
+    service proftpd restart
+```
+
+* Ces lignes permettent de configurer le serveur FTP dans la mesure du possible. Dans un premier temps, l'éxécution de l'image va donc crée le group d'utilisateurs "ftpgroup" qui contiendra ceux qui auront accès spécifiquement au serveur FTP. Ensuite elle va crée l'utilisateur "seb" avec comme dossier par défaut "/ftpshare", puis elle donne les bonnes permissions et redémarre l'outil proftpd.
+
+```bash
+# EXPOSE
 EXPOSE 80
 ```
 
