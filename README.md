@@ -1,18 +1,39 @@
 **Equipe :** 18
 **Année :** 2021-2022
-**IUT Le Havre - Cours GIT**
+**IUT Le Havre - SAE 2.03**
 --------------------------------------------------------------------------------------
-# Compte rendu SAE 2.03 - Installation de services réseaux
+# Instruction d'installation
 
-* Quelque chose d’intéressant qui vient de se passer est que le référentiel a maintenant deux branches, la branche ***gh-pages*** (où nous aurons le contenu Web) et la branche principale ***main*** (où nous continuons à avoir notre code)
-
-* Maintenant que nous avons la nouvelle branche ***gh-pages*** dans le référentiel distant sur github, ce que nous devons faire est de la mettre à jour dans notre répertoire local. Pour ce faire :
-  * Allons au répertoire **tp3** de notre machine (dépôt local). Si nous ne trouvons pas ce répertoire, une autre option consiste à cloner à nouveau le référentiel github.
- * La commande qui nous permet de récupérer la branche distante est ***git fetch***. Tapez :
+* Vérifier que docker est installé :
  ```bash
- git fetch origin gh-pages
+ docker --version
  ```
- * Ensuite, pour passer localement à la branche ***gh-pages***, tapez :
+ * Cloner le référentiel :
  ```bash
- git checkout gh-pages
+ git clone https://github.com/Raptoruxs/docker-sae203.git
  ```
+* Aller dans le dossier du référentiel :
+```bash
+ cd docker-sae203
+ ```
+* Construire l'image décrite dans le dockerfile avec cette commande : 
+```bash
+docker build -t <choisir-un-nom-pour-l'image> .
+ ```
+* Lancer l'image :
+```bash
+docker run -d -p 8080:80 <nom-de-l'image-choisie>
+ ```
+* Vérifier que le conteneur associé est actif : 
+```bash
+docker ps
+ ```
+* La sortie de cette commande devrait être similaire à ceci : (la commande sera surement différente)
+```shell
+CONTAINER ID   IMAGE          COMMAND              CREATED          STATUS          PORTS                                   NAMES
+b8f8f406b03c   dockersae   "httpd-foreground"   30 minutes ago   Up 30 minutes   0.0.0.0:8080->80/tcp, :::8080->80/tcp   dockersae
+```
+* Enfin, vous pouvez arrêter le conteneur avec cette commande :
+```bash
+docker stop b8f8f406b03c
+```
