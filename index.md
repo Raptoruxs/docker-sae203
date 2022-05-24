@@ -74,9 +74,11 @@ EXPOSE 80
 
 Filezilla est un client FTP (File Transfer Protocol), il permet de se connecter a des serveurs a distance comme des serveurs web afin de mettre en ligne son site. Il permet de partager des fichiers entre différentes machines.
 
-![Logo Filezilla](https://comptoir-du-libre.org/img/files/Softwares/64/photo/avatar/Software_logo_FileZilla.png)
+![Screen Filezilla](https://cdn.discordapp.com/attachments/828601183060623392/978581665041506334/Screenshot_1.png)
+*Capture d'écran du menu de Filezilla*
 
-###### *Icône de Filezilla*
+<img style="width=25%;" src="https://comptoir-du-libre.org/img/files/Softwares/64/photo/avatar/Software_logo_FileZilla.png" alt="Logo Filezilla"></img>
+*Icône de Filezilla*
 
 ## Utilisation du programme
 
