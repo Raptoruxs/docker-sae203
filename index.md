@@ -84,18 +84,18 @@ Filezilla est un client FTP (File Transfer Protocol), il permet de se connecter 
 
 
 * Dans le **cadre rouge**, on peut voir l'espace où l'on peut renseigner les **informations pour se connecter au serveur**.
- * Comme le nom de l'hôte
- * Le nom de l'utilisateur
- * Le mot de passe
- * Le port du serveur
+  * Comme le nom de l'hôte
+  * Le nom de l'utilisateur
+  * Le mot de passe
+  * Le port du serveur
 
 * Dans le **cadre orange**, on peut **voir les fichiers de votre machine**.
- * **En haut**, on voit les **chemins des répertoires de votre machine**.
- * **En bas**, vous apperceverez les **dossiers et fichiers** qui se trouvent **dans le dossier sélectionné** en haut.
+  * **En haut**, on voit les **chemins des répertoires de votre machine**.
+  * **En bas**, vous apperceverez les **dossiers et fichiers** qui se trouvent **dans le dossier sélectionné** en haut.
 
 * Dans le **cadre vert**, on **voit les fichiers du serveur** sur lequel nous nous sommes connectés.
- * **En haut**, on voit les **chemins des répertoires du serveur**
- * **En bas**, vous verrez les **dossiers et fichiers** qui se trouvent **dans le dossier sélectionné** en haut.
+  * **En haut**, on voit les **chemins des répertoires du serveur**
+  * **En bas**, vous verrez les **dossiers et fichiers** qui se trouvent **dans le dossier sélectionné** en haut.
  
 * Dans le **cadre bleu**, vous pourrez voir les **transactions réalisées entre votre machine et le serveur** auquel vous êtes connecté.
 
