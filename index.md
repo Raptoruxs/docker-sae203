@@ -48,7 +48,7 @@ RUN apt-get update && \
 
 * Ces lignes ci-dessus permettent dans un premier temps, lors de l'execution de l'image, de mettre à jour le système d'exploitation de l'image, pour que tout soit à jour avant d'installer de nouvelles applications. La dernière ligne permet d'installer proftpd, un outil qui nous permet de crée un serveur ftp sur le debian.
 
-## Pourquoi ProFTPD
+## Pourquoi ProFTPD ?
 Nous avons décidé d'utiliser l'outil ProFTPD, car après plusieurs recherches, ProFTPD fait partie des outils les plus utilisés pour créer un serveur ftp avec VsFTPd et Pure-FTPd. Parmis ces trois-là nous avons prit ProFTPD car il nous paraissez le plus simple.
 
 ```bash
@@ -61,7 +61,9 @@ RUN addgroup ftpgroup && \
     service proftpd restart
 ```
 
-* Ces lignes permettent de configurer le serveur FTP dans la mesure du possible. Dans un premier temps, l'éxécution de l'image va donc crée le group d'utilisateurs "ftpgroup" qui contiendra ceux qui auront accès spécifiquement au serveur FTP. Ensuite elle va crée l'utilisateur "seb" avec comme dossier par défaut "/ftpshare", puis elle donne les bonnes permissions et redémarre l'outil proftpd.
+* Ces lignes permettent de configurer le serveur FTP dans la mesure du possible.
+ * Dans un premier temps, l'éxécution de l'image va donc crée le group d'utilisateurs "ftpgroup" qui contiendra ceux qui auront accès spécifiquement au serveur FTP.
+ * Ensuite elle va crée l'utilisateur "seb" avec comme dossier par défaut "/ftpshare", puis elle donne les bonnes permissions et redémarre l'outil proftpd.
 
 ```bash
 # EXPOSE
@@ -69,6 +71,8 @@ EXPOSE 80
 ```
 
 * Cette dernière ligne de notre Dockerfile permet de définir le port d'écoute, ici sur 80.
+
+---
 
 ## Point sur le client
 
@@ -80,21 +84,33 @@ Filezilla est un client FTP (File Transfer Protocol), il permet de se connecter 
 
 
 * Dans le **cadre rouge**, on peut voir l'espace où l'on peut renseigner les **informations pour se connecter au serveur**.
-    Comme le nom de l'hôte, le nom de l'utilisateur, le mot de passe et enfin, le port du serveur.
-* Dans le **cadre orange**, on peut **voir les fichiers de votre machine**. **En haut**, on voit les **chemins des répertoires de votre machine** et **en bas**, vous apperceverez les **dossiers et fichiers** qui se trouvent **dans le dossier sélectionné** en haut.
-* Dans le **cadre vert**, on **voit les fichiers du serveur** sur lequel nous nous sommes connectés. En haut, on voit les **chemins des répertoires du serveur** et **en bas**, vous verrez les **dossiers et fichiers** qui se trouvent **dans le dossier sélectionné** en haut.
+ * Comme le nom de l'hôte
+ * Le nom de l'utilisateur
+ * Le mot de passe
+ * Le port du serveur
+
+* Dans le **cadre orange**, on peut **voir les fichiers de votre machine**.
+ * **En haut**, on voit les **chemins des répertoires de votre machine**.
+ * **En bas**, vous apperceverez les **dossiers et fichiers** qui se trouvent **dans le dossier sélectionné** en haut.
+
+* Dans le **cadre vert**, on **voit les fichiers du serveur** sur lequel nous nous sommes connectés.
+ * **En haut**, on voit les **chemins des répertoires du serveur**
+ * **En bas**, vous verrez les **dossiers et fichiers** qui se trouvent **dans le dossier sélectionné** en haut.
+ 
 * Dans le **cadre bleu**, vous pourrez voir les **transactions réalisées entre votre machine et le serveur** auquel vous êtes connecté.
 
 
-     <img style="text-align=center;" src="https://comptoir-du-libre.org/img/files/Softwares/64/photo/avatar/Software_logo_FileZilla.png" alt="Logo Filezilla"></img>
+![Logo Filezilla](https://comptoir-du-libre.org/img/files/Softwares/64/photo/avatar/Software_logo_FileZilla.png)
 
      *Icône de Filezilla*
+
+---
 
 ## Utilisation du programme
 
 Filezilla est un logiciel dit FTP, c'est-à-dire qu'il permet de transferer des fichiers d'une machine local à un serveur distant.
 
-Le serveur distant, ici un serveur FTP, que nous avons configuré par nos soins, sera créer par l'outil Pro FTPD intégré à l'image, permettant ainsi d'envoyer des fichiers de manière aléatoire sur le serveur pour finalement pouvoir les recevoir via une autre machine.
+* Le serveur distant, ici un serveur FTP, que nous avons configuré par nos soins, sera créer par l'outil Pro FTPD intégré à l'image, permettant ainsi d'envoyer des fichiers de manière aléatoire sur le serveur pour finalement pouvoir les recevoir via une autre machine.
 
 ---
 
