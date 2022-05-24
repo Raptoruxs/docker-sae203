@@ -77,7 +77,8 @@ Filezilla est un client FTP (File Transfer Protocol), il permet de se connecter 
 ![Screen Filezilla](https://cdn.discordapp.com/attachments/828601183060623392/978581665041506334/Screenshot_1.png)
 *Capture d'écran du menu de Filezilla*
 
-<img style="width=25%;" src="https://comptoir-du-libre.org/img/files/Softwares/64/photo/avatar/Software_logo_FileZilla.png" alt="Logo Filezilla"></img>
+<img style="width=100px; height=100px;" src="https://comptoir-du-libre.org/img/files/Softwares/64/photo/avatar/Software_logo_FileZilla.png" alt="Logo Filezilla"></img>
+
 *Icône de Filezilla*
 
 ## Utilisation du programme
