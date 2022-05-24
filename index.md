@@ -74,12 +74,21 @@ EXPOSE 80
 
 Filezilla est un client FTP (File Transfer Protocol), il permet de se connecter a des serveurs a distance comme des serveurs web afin de mettre en ligne son site. Il permet de partager des fichiers entre différentes machines.
 
-![Screen Filezilla](https://cdn.discordapp.com/attachments/828601183060623392/978581665041506334/Screenshot_1.png)
-*Capture d'écran du menu de Filezilla*
+![Screen Filezilla](https://zupimages.net/up/22/21/fg5j.png)
 
-<img style="width=100px; height=100px;" src="https://comptoir-du-libre.org/img/files/Softwares/64/photo/avatar/Software_logo_FileZilla.png" alt="Logo Filezilla"></img>
+   *Capture d'écran du menu de Filezilla*
 
-*Icône de Filezilla*
+
+* Dans le **cadre rouge**, on peut voir l'espace où l'on peut renseigner les **informations pour se connecter au serveur**.
+    Comme le nom de l'hôte, le nom de l'utilisateur, le mot de passe et enfin, le port du serveur.
+* Dans le **cadre orange**, on peut **voir les fichiers de votre machine**. **En haut**, on voit les **chemins des répertoires de votre machine** et **en bas**, vous apperceverez les **dossiers et fichiers** qui se trouvent **dans le dossier sélectionné** en haut.
+* Dans le **cadre vert**, on **voit les fichiers du serveur** sur lequel nous nous sommes connectés. En haut, on voit les **chemins des répertoires du serveur** et **en bas**, vous verrez les **dossiers et fichiers** qui se trouvent **dans le dossier sélectionné** en haut.
+* Dans le **cadre bleu**, vous pourrez voir les **transactions réalisées entre votre machine et le serveur** auquel vous êtes connecté.
+
+
+     <img style="text-align=center;" src="https://comptoir-du-libre.org/img/files/Softwares/64/photo/avatar/Software_logo_FileZilla.png" alt="Logo Filezilla"></img>
+
+     *Icône de Filezilla*
 
 ## Utilisation du programme
 
