@@ -18,7 +18,7 @@
  ```
 * Construire l'image décrite dans le dockerfile avec cette commande : 
 ```bash
-docker build -t <choisir-un-nom-pour-l'image> .
+docker build -t <choisir-un-nom> .
  ```
 * Lancer l'image :
 ```bash
