@@ -97,16 +97,19 @@ Filezilla est un client FTP (File Transfer Protocol), il permet de se connecter 
   * Le mot de passe
   * Le port du serveur
 
+-
 
 * Dans le **cadre orange**, on peut **voir les fichiers de votre machine**.
   * **En haut**, on voit les **chemins des répertoires de votre machine**.
   * **En bas**, vous apperceverez les **dossiers et fichiers** qui se trouvent **dans le dossier sélectionné** en haut.
 
+-
 
 * Dans le **cadre vert**, on **voit les fichiers du serveur** sur lequel nous nous sommes connectés.
   * **En haut**, on voit les **chemins des répertoires du serveur**
   * **En bas**, vous verrez les **dossiers et fichiers** qui se trouvent **dans le dossier sélectionné** en haut.
 
+-
 
 * Dans le **cadre bleu**, vous pourrez voir les **transactions réalisées entre votre machine et le serveur** auquel vous êtes connecté.
 
@@ -114,6 +117,11 @@ Filezilla est un client FTP (File Transfer Protocol), il permet de se connecter 
 ![Logo Filezilla](https://comptoir-du-libre.org/img/files/Softwares/64/photo/avatar/Software_logo_FileZilla.png)
 
    *Icône de Filezilla*
+---
+
+## Conclusion
+
+ Dans cette SAE 2.03, nous avons créer un serveur FTP permettant de stocker des fichiers pour pouvoir les récupérer sur notre machine ou les mettre sur le serveur. Pour créer le serveur, nous avons utiliser l'outil ProFTPD. Pour créer l'image permettant le transfert de fichier, nous avons utiliser Filezilla. Cependant, il existe une multitude d'images permettant le transfert comme WinSCP.
 
 ---
 
