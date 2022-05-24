@@ -33,6 +33,19 @@ docker ps
 CONTAINER ID   IMAGE          COMMAND              CREATED          STATUS          PORTS                                   NAMES
 b8f8f406b03c   dockersae   "httpd-foreground"   30 minutes ago   Up 30 minutes   0.0.0.0:8080->80/tcp, :::8080->80/tcp   dockersae
 ```
+
+* Afin de pouvoir vous connectez au serveur FTP, vous devez récuperer l'ip de celui-ci. Tout d'abord ouvrez le terminal du conteneur avec cette commande : 
+```bash
+docker exec -it nom_du_conteneur /bin/sh
+```
+
+* Ensuite, dans le terminal du conteneur faîtes la commande "ifconfig" ou "ip" puis récuperer l'ip de la machine.
+
+
+* Enfin, lancez le logiciel Filezila Client, puis mettez dans la partie que vous voyez sur l'image ci-dessous, dans la case hôte cette ip, 
+puis dans la case utilisateur mettez "seb", dans la case mot de passe ne mettez rien et enfin mettez comme port "21".
+
+
 * Enfin, vous pouvez arrêter le conteneur avec cette commande :
 ```bash
 docker stop b8f8f406b03c
