@@ -48,11 +48,13 @@ RUN apt-get update && \
 
 * Ces lignes ci-dessus permettent dans un premier temps, lors de l'execution de l'image, de mettre à jour le système d'exploitation de l'image, pour que tout soit à jour avant d'installer de nouvelles applications. La dernière ligne permet d'installer proftpd, un outil qui nous permet de crée un serveur ftp sur le debian.
 
-## Pourquoi ProFTPD ?
+### Pourquoi ProFTPD ?
 Nous avons décidé d'utiliser l'outil ProFTPD, car après plusieurs recherches, ProFTPD fait partie des outils les plus utilisés pour créer un serveur ftp avec VsFTPd et Pure-FTPd. Parmis ces trois-là nous avons prit ProFTPD car il nous paraissez le plus simple.
 
 ```bash
 # Config FTP server
+
+COPY ./proftpd.conf  /etc/proftpd/
 
 RUN addgroup ftpgroup && \
     adduser seb --home /ftpshare && \
@@ -62,7 +64,9 @@ RUN addgroup ftpgroup && \
 ```
 
 * Ces lignes permettent de configurer le serveur FTP dans la mesure du possible.
- * Dans un premier temps, l'éxécution de l'image va donc crée le group d'utilisateurs "ftpgroup" qui contiendra ceux qui auront accès spécifiquement au serveur FTP.
+  * Dans un premier temps, l'éxécution de l'image va donc crée le group d'utilisateurs "ftpgroup" qui contiendra ceux qui auront accès spécifiquement au serveur FTP.
+
+
  * Ensuite elle va crée l'utilisateur "seb" avec comme dossier par défaut "/ftpshare", puis elle donne les bonnes permissions et redémarre l'outil proftpd.
 
 ```bash
@@ -89,14 +93,17 @@ Filezilla est un client FTP (File Transfer Protocol), il permet de se connecter 
   * Le mot de passe
   * Le port du serveur
 
+
 * Dans le **cadre orange**, on peut **voir les fichiers de votre machine**.
   * **En haut**, on voit les **chemins des répertoires de votre machine**.
   * **En bas**, vous apperceverez les **dossiers et fichiers** qui se trouvent **dans le dossier sélectionné** en haut.
 
+
 * Dans le **cadre vert**, on **voit les fichiers du serveur** sur lequel nous nous sommes connectés.
   * **En haut**, on voit les **chemins des répertoires du serveur**
   * **En bas**, vous verrez les **dossiers et fichiers** qui se trouvent **dans le dossier sélectionné** en haut.
- 
+
+
 * Dans le **cadre bleu**, vous pourrez voir les **transactions réalisées entre votre machine et le serveur** auquel vous êtes connecté.
 
 
