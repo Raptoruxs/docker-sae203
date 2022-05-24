@@ -45,6 +45,8 @@ docker exec -it nom_du_conteneur /bin/sh
 * Enfin, lancez le logiciel Filezila Client, puis mettez dans la partie que vous voyez sur l'image ci-dessous, dans la case hôte cette ip, 
 puis dans la case utilisateur mettez "seb", dans la case mot de passe ne mettez rien et enfin mettez comme port "21".
 
+![Screen Filezilla](https://zupimages.net/up/22/21/ud00.png)
+
 
 * Enfin, vous pouvez arrêter le conteneur avec cette commande :
 ```bash
