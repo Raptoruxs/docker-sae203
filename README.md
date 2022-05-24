@@ -28,7 +28,7 @@ docker run -d -p 8080:80 <nom-de-l'image-choisie>
 ```bash
 docker ps
  ```
-* La sortie de cette commande devrait être similaire à ceci : (la commande sera surement différente)
+* La sortie de cette commande devrait être similaire à ceci : (la partie "COMMAND" sera surement différente)
 ```shell
 CONTAINER ID   IMAGE          COMMAND              CREATED          STATUS          PORTS                                   NAMES
 b8f8f406b03c   dockersae   "httpd-foreground"   30 minutes ago   Up 30 minutes   0.0.0.0:8080->80/tcp, :::8080->80/tcp   dockersae
