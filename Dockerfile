@@ -11,8 +11,11 @@ RUN apt-get -y install proftpd
 RUN addgroup ftpgroup && \
     adduser seb --home /ftpshare && \
     adduser seb ftpgroup && \
-    chmod -R 1777 /ftpshare/ && \
-    service proftpd restart
+    chmod -R 1777 /ftpshare/
+
+COPY ./proftpd.conf  /etc/proftpd/
+
+RUN service proftpd restart
 
 
 # EXPOSE
