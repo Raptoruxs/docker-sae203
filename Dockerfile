@@ -1,9 +1,9 @@
 FROM debian:latest
 
 # Update system, install software
-RUN apt-get update && \
-    apt-get -y install && \
-    apt-get install proftpd
+RUN apt-get update
+RUN apt-get -y install
+RUN apt-get -y install proftpd
 
 
 # Config FTP server
