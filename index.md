@@ -102,7 +102,7 @@ Filezilla est un client FTP (File Transfer Protocol), il permet de se connecter 
 
 ![Logo Filezilla](https://comptoir-du-libre.org/img/files/Softwares/64/photo/avatar/Software_logo_FileZilla.png)
 
-     *Icône de Filezilla*
+   *Icône de Filezilla*
 
 ---
 
