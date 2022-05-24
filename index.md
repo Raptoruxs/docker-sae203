@@ -75,6 +75,10 @@ Filezilla est un client FTP (File Transfer Protocol), il permet de se connecter 
 
 Filezilla est un logiciel dit FTP, c'est-à-dire qu'il permet de transferer des fichiers d'une machine local à un serveur distant.
 
+
+## Pourquoi ProFTPD
+Nous avons décidé d'utiliser l'outil ProFTPD, car après plusieurs recherches, ProFTPD fait partie des outils les plus utilisés pour créer un serveur ftp avec VsFTPd et Pure-FTPd. Parmis ces trois-là nous avons prit ProFTPD car il nous paraissez le plus simple.
+
 ---
 
    ***Equipe n°18 - IUT du Havre - 2021/2022***
