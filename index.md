@@ -1,11 +1,15 @@
 # SAE 2.03 - Installation de services réseaux
 
+---
+
 ## Soutenance
 
 Lors de la SAE 2.03, qui consiste à l'installation d'un services réseaux, nous nous sommes réunis en brainstorming afin de débattre sur les différentes idées de projet que nous allions le créé ainsi que comment nous allions le réaliser.
 
 Tout d'abord, nous avons installé l'application Docker qui permet de créer des containers composés d'images ou d'autres containers.
 Une image contient des containers. Ainsi, l'image que nous créerons pourra comporter le DockerFile qui nous permettra de créer le site.
+
+---
 
 ## Installation
 
@@ -63,17 +67,19 @@ EXPOSE 80
 
 * Cette dernière ligne de notre Dockerfile permet de définir le port d'écoute, ici sur 80.
 
-# Point sur l'application
+## Point sur le client
 
 Filezilla est un client FTP (File Transfer Protocol), il permet de se connecter a des serveurs a distance comme des serveurs web afin de mettre en ligne son site. Il permet de partager des fichiers entre différentes machines.
 
-![Logo, c'est rigolo](https://iconarchive.com/download/i97762/bokehlicia/pacifica/filezilla.ico)
+![Logo Filezilla](https://iconarchive.com/download/i97762/bokehlicia/pacifica/filezilla.ico)
 
 ###### *Icône de Filezilla*
 
 ## Utilisation du programme
 
 Filezilla est un logiciel dit FTP, c'est-à-dire qu'il permet de transferer des fichiers d'une machine local à un serveur distant.
+
+Le serveur distant, ici un serveur FTP, que nous avons configuré par nos soins, sera créer par l'outil Pro FTPD intégré à l'image, permettant ainsi d'envoyer des fichiers de manière aléatoire sur le serveur pour finalement pouvoir les recevoir via une autre machine.
 
 
 ## Pourquoi ProFTPD
