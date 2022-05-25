@@ -63,7 +63,7 @@ RUN addgroup ftpgroup && \
     service proftpd restart
 ```
 
-* Ces lignes permettent de configurer le serveur FTP dans la mesure du possible.
+* Ces lignes permettent de configurer le serveur [FTP](https://fr.wikipedia.org/wiki/File_Transfer_Protocol, "Wikipédia FTP") dans la mesure du possible.
   * Dans un premier temps, l'éxécution de l'image va donc crée le group d'utilisateurs "ftpgroup" qui contiendra ceux qui auront accès spécifiquement au serveur FTP.
 
 
@@ -80,7 +80,7 @@ EXPOSE 80
 
 ## Point sur le client
 
-[Filezilla](https://filezilla-project.org/, "Filezilla") est un client [FTP](https://fr.wikipedia.org/wiki/File_Transfer_Protocol, "Wikipédia FTP") (File Transfer Protocol), il permet de se connecter a des serveurs a distance comme des serveurs web afin de mettre en ligne son site. Il permet de partager des fichiers entre différentes machines.
+[Filezilla](https://filezilla-project.org/, "Filezilla") est un client FTP (File Transfer Protocol), il permet de se connecter a des serveurs a distance comme des serveurs web afin de mettre en ligne son site. Il permet de partager des fichiers entre différentes machines.
 
 ### Utilisation du programme
 
