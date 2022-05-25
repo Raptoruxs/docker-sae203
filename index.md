@@ -49,7 +49,7 @@ RUN apt-get update && \
 * Ces lignes ci-dessus permettent dans un premier temps, lors de l'execution de l'image, de mettre à jour le système d'exploitation de l'image, pour que tout soit à jour avant d'installer de nouvelles applications. La dernière ligne permet d'installer proftpd, un outil qui nous permet de crée un serveur ftp sur le debian.
 
 ### Pourquoi ProFTPD ?
-Nous avons décidé d'utiliser l'outil ProFTPD, car après plusieurs recherches, ProFTPD fait partie des outils les plus utilisés pour créer un serveur ftp avec VsFTPd et Pure-FTPd. Parmis ces trois-là nous avons prit ProFTPD car il nous paraissez le plus simple.
+Nous avons décidé d'utiliser l'outil [ProFTPD](http://www.proftpd.org/, "Site de ProFTPD"), car après plusieurs recherches, ProFTPD fait partie des outils les plus utilisés pour créer un serveur ftp avec VsFTPd et Pure-FTPd. Parmis ces trois-là nous avons prit ProFTPD car il nous paraissez le plus simple.
 
 ```bash
 # Config FTP server
@@ -80,7 +80,7 @@ EXPOSE 80
 
 ## Point sur le client
 
-Filezilla est un client FTP (File Transfer Protocol), il permet de se connecter a des serveurs a distance comme des serveurs web afin de mettre en ligne son site. Il permet de partager des fichiers entre différentes machines.
+[Filezilla](https://filezilla-project.org/, "Filezilla") est un client [FTP](https://fr.wikipedia.org/wiki/File_Transfer_Protocol, "Wikipédia FTP") (File Transfer Protocol), il permet de se connecter a des serveurs a distance comme des serveurs web afin de mettre en ligne son site. Il permet de partager des fichiers entre différentes machines.
 
 ### Utilisation du programme
 
